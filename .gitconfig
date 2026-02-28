@@ -1,0 +1,43 @@
+[alias]
+[core]
+	autocrlf = input
+	; pager = delta	
+	pager = diff-so-fancy | sed -r 's/^([+-])//'
+	excludesfile = /Users/paulnaber/.gitignore_global
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[user]
+	name = Paul Naber
+	email = paul.naber@inside-m2m.de
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[push]
+	default = simple
+        autoSetupRemote = true
+
+[diff-so-fancy]
+	stripLeadingSymbols = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/paulnaber/.stCommitMsg

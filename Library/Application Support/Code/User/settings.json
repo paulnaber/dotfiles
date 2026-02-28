@@ -1,0 +1,589 @@
+{
+    // editor settings
+    // "editor.fontSize": 14,
+    "editor.cursorSurroundingLines": 12,
+    "window.systemColorTheme": "auto",
+    "window.autoDetectColorScheme": true,
+
+    // Operator Mono
+    // https://www.typography.com/blog/introducing-operator
+    // this font uses kind of handwriting for italics
+    // comments for example are italic and therefore look very nice
+    // "editor.fontSize": 14,
+    // "editor.fontWeight": "400",
+    // "editor.fontFamily": "Operator Mono", // always best
+    // "editor.cursorSurroundingLines": 8,
+    // "window.commandCenter": false,
+
+    // JetBrains Mono
+    // https://www.jetbrains.com/de-de/lp/mono/
+    // "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontSize": 13,
+    // "editor.fontWeight": "400",
+    // "editor.fontLigatures": "'calt', 'liga', 'ss03', 'ss04', 'ss06'",
+
+    // Monaspace
+    // https://monaspace.githubnext.com/
+    "editor.fontFamily": "Monaspace Neon Var",
+    "editor.fontSize": 14,
+    "editor.fontWeight": 300,
+    // "editor.fontLigatures": "'calt', 'liga', 'ss03', 'ss04', 'ss06'",
+
+    "editor.renderControlCharacters": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.suggestSelection": "first",
+    "editor.wordWrapColumn": 140,
+    "editor.suggest.showTypeParameters": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.autohide": "mouseover",
+    "editor.minimap.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.cursorStyle": "line-thin",
+    // "editor.foldingImportsByDefault": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always"
+    }, // always best
+    // "workbench.colorTheme": "Catppuccin Mocha", // good light theme
+    // "workbench.colorTheme": "Catppuccin Latte", // good dark theme
+    "workbench.settings.editor": "json", // opens in json by default
+    "workbench.colorTheme": "Monokai Pro Light",
+    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.preferredHighContrastLightColorTheme": "Default Light+",
+    "workbench.preferredLightColorTheme": "Monokai Pro Light",
+    "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 15,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.mp4": "vscode.videoPreview"
+    },
+    "workbench.editor.pinnedTabsOnSeparateRow": false,
+    "workbench.list.smoothScrolling": true,
+    "workbench.startupEditor": "none",
+    // "workbench.colorCustomizations": {
+    //     "diffEditor.insertedLineBackground": "#a6ff0017",
+    //     "diffEditor.removedLineBackground": "#ff000018",
+    //     "diffEditor.insertedTextBackground": "#a6ff006c",
+    //     "diffEditor.removedTextBackground": "#ff000065"
+    // },
+    // explorer settings
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // terminal settings
+    // "terminal.integrated.fontSize": 12,
+    "terminal.external.osxExec": "iTerm",
+    "terminal.integrated.env.osx": {},
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.inheritEnv": false,
+
+    // prettier settings
+    "prettier.trailingComma": "none",
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+
+    // default formatter
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // formatting settings
+    "html.format.unformatted": "br",
+    "html.format.wrapLineLength": 200,
+    "html.format.wrapAttributes": "force-aligned",
+
+    // import settings
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+
+    // breadcrumbs settings
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showEnums": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showInterfaces": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showModules": false,
+    "breadcrumbs.showNamespaces": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.symbolSortOrder": "name",
+    "breadcrumbs.showNull": false,
+    "breadcrumbs.showNumbers": true,
+    "breadcrumbs.showObjects": false,
+    "breadcrumbs.showOperators": false,
+    "breadcrumbs.showProperties": false,
+    "breadcrumbs.showStrings": false,
+    "breadcrumbs.showStructs": false,
+    "breadcrumbs.showTypeParameters": false,
+    "breadcrumbs.showVariables": false,
+
+    // general settings
+    "extensions.ignoreRecommendations": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "application.shellEnvironmentResolutionTimeout": 20,
+    "quarkus.tools.alwaysShowWelcomePage": false,
+    "java.format.settings.url": "/Users/paulnaber/Documents/Java/standard_im2m.xml",
+    "java.inlayHints.parameterNames.enabled": "none",
+
+    // java settings
+    "java.home": "/Users/paulnaber/Documents/Java/jjdk-21.0.6.jdk/Contents/Home",
+    "xml.java.home": "/Users/paulnaber/Documents/Java/zulu-11.jdk/Contents/Home",
+    "java.jdt.ls.java.home": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/Users/paulnaber/Documents/Java/zulu-8.jdk/Contents/Home"
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/Users/paulnaber/Documents/Java/zulu-11.jdk/Contents/Home"
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "/Users/paulnaber/Documents/Java/jdk-17.0.12.jdk/Contents/Home"
+        },
+        {
+            "name": "JavaSE-21",
+            "path": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home",
+            "default": true
+        }
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.maven.enabled": true,
+    "java.configuration.maven.userSettings": "/Users/paulnaber/.m2/settings.xml",
+    "maven.terminal.useJavaHome": true,
+    "java.jdt.ls.apt.enabled": false,
+    // stop vscode from locking the files -> mvn clean fails otherwise
+    // also possible to disable the autobuild
+    // "files.watcherExclude": {
+    //     "**/target/**": true
+    // },
+    // "java.test.config": {
+    //     "vmArgs": ["-Dquarkus.test.type=integration"]
+    // },
+    "java.test.config": {
+        "vmArgs": ["-Dquarkus.test.type=quarkus-test"]
+    },
+    // git settings
+    "git.confirmSync": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "git.path": "/usr/local/Cellar/git/2.31.0/bin/git",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "gitlab.duoCodeSuggestions.enabled": false,
+    "gitlab.duoChat.enabled": false,
+    "gitlab.duo.enabledWithoutGitlabProject": false,
+    "gitlab.keybindingHints.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+
+    // ai settings
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false,
+        "yaml": true,
+        "scss": false
+    },
+
+    // custom js and css
+    "vscode_custom_css.imports": ["file:///Users/paulnaber/.vscode/style.css"],
+    "diffEditor.ignoreTrimWhitespace": true,
+
+    // VIM
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": false, // with easymotion or just / this is not needed
+    "vim.leader": "<space>",
+    "editor.scrollBeyondLastLine": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.easymotion": true,
+    "vim.statusBarColorControl": false,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "j"],
+            "after": ["<ESC>"]
+        }
+    ],
+    // To improve performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+        "asvetliakov.vscode-neovim": 1
+    },
+    // IMPORTANT KEYMAPS
+    // ### tabs and windows
+    // ctrl (caps) e                   -> open explorer (pref cmd shift e for toggle)
+    // ctrl (caps) + h | j | k | l     -> switching between splits
+    // shift + h | l                   -> tab switching
+    // leader (space) + v | s          -> create splitt
+    // leader (space) + tt             -> new tab
+    // leader (space) + to             -> close other tabs
+    // leader (space) + td             -> close currtent tab
+    // leader (space) + w              -> save file
+    // ### quickjumps
+    // leader (space) h                -> see open tabs - use it with enter to quickly go back to last file (ctrl tab basically)
+    // ctrl (caps) + o | i             -> jump back and forth
+    // ### Search
+    // leader (space) space            -> quick open file search
+    // leader (space) + p              -> quick open file search
+    // leader (space) /                -> grep search (file content)
+    // ### easymotion
+    // s                               -> easymotion character find - similar to leap or flash
+    // leader + /                      -> easymotion character find - similar to leap - currently disabled for quickopen
+    // leader + w                      -> easymotion jump to word - currently disabled for quickopen
+    // leader gg                       -> lazygit (lazygit extension required)
+    // leader + f                      -> format file
+    // leader rn                       -> rename symbol
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["J"],
+            "after": ["5", "j", "z", "z"]
+            // "after": ["j", "z", "z"]
+            // "after": ["}"]
+        },
+        {
+            "before": ["K"],
+            "after": ["5", "k", "z", "z"]
+            // "after": ["k", "z", "z"]
+            // "after": ["{"]
+        },
+        {
+            "before": ["<Leader>", "j"],
+            "after": ["J"]
+        },
+        // back and forth
+        {
+            "before": ["<C-i"],
+            "after": ["C", "S", "-"]
+        },
+        {
+            "before": ["<C-o"],
+            "after": ["C", "-"]
+        },
+        // SWITCHING BETWEEN SPLITS
+        {
+            "before": ["<C-h>"], // same as in tmux
+            "after": ["<C-w>", "h"] // same as in nvim
+        },
+        {
+            "before": ["<C-j>"], // same as in tmux
+            "after": ["<C-w>", "j"] // same as in nvim
+        },
+        {
+            "before": ["<C-k>"], // same as in tmux
+            "after": ["<C-w>", "k"] // same as in nvim
+        },
+        {
+            "before": ["<C-l>"], // same as in tmux
+            "after": ["<C-w>", "l"] // same as in nvim
+        },
+        // SPLITTING SCREENS
+        {
+            "before": ["<C-a>", "%"], // tmux binding
+            "after": ["<C-w>", "v"] // nvim binding
+        },
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        {
+            "before": ["<C-a>", "\""], // tmux binding (doesn not work)
+            "after": ["<C-w>", "s"] // nvim binding
+        },
+        { "before": ["leader", "s"], "commands": [":split"] },
+        // SWITCHING BETWEEN TABS
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        {
+            "before": ["<Leader>", "t", "t"],
+            "commands": [":tabnew"]
+        },
+        {
+            "before": ["<Leader>", "t", "o"],
+            "commands": [":tabo"]
+        },
+        {
+            "before": ["<Leader>", "t", "d"],
+            "commands": [":tabc"]
+        },
+        {
+            "before": ["leader", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<Leader>", "t"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
+        {
+            "before": ["<Leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        // see all open tabs and navigate between them
+        {
+            "before": ["<Leader>", "tab"],
+            "commands": [
+                "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+            ]
+        },
+        {
+            "before": ["<Leader>", "g", "c", "r"],
+            "commands": ["workbench.action.rename"]
+        },
+        // EXPLORER
+        // it is not quite the same as using cmd shift e
+        {
+            "before": ["<Leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<Leader>", "g", "e"],
+            "commands": ["workbench.scm.focus"]
+        },
+        // FIND and SEARCH
+        // {
+        //     "before": ["<Leader>", "f"],
+        //     "commands": ["workbench.view.search"]
+        // },
+        // fzf search - more like nvim - extension required and some linux tools like fzf
+        // quick search - same but without extension and directly by vscode
+        // {
+        //     "before": ["leader", "space"],
+        //     "commands": ["find-it-faster.findFiles"]
+        //     // "commands": ["workbench.action.quickTextSearch"]
+        // },
+        // {
+        //     "before": ["leader", "/"],
+        //     "commands": ["find-it-faster.findWithinFiles"]
+        // },
+        // vscode searches
+        {
+            "before": ["<Leader>", "space"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<Leader>", "/"],
+            "commands": ["workbench.action.quickTextSearch"]
+        },
+        // LAZYGIT
+        {
+            "before": ["<Leader>", "g", "g"],
+            "commands": ["lazygit.openLazygit"]
+        },
+        // Refactoring
+        {
+            "before": ["<Leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // easymotion
+        {
+            "before": ["s"],
+            // "after": ["leader", "leader", "/"]
+            // use this for bidirectional easymotion
+            "after": ["leader", "leader", "leader", "b", "d", "w"]
+        },
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["U"],
+            "commands": ["redo"]
+        },
+        {
+            "before": ["leader", "f"],
+            "commands": ["editor.action.formatDocument"]
+        }
+    ],
+    "find-it-faster.general.useTerminalInEditor": true,
+    "codesnap.containerPadding": "0",
+    "[lua]": {
+        "editor.defaultFormatter": "Koihik.vscode-lua-format"
+    },
+    "diffEditor.renderSideBySide": true,
+    "java.completion.favoriteStaticMembers": [
+        "de.m2mgate.melitta.rest.server.*",
+        "org.junit.Assert.*",
+        "org.junit.Assume.*",
+        "org.junit.jupiter.api.Assertions.*",
+        "org.junit.jupiter.api.Assumptions.*",
+        "org.junit.jupiter.api.DynamicContainer.*",
+        "org.junit.jupiter.api.DynamicTest.*",
+        "org.mockito.Mockito.*",
+        "org.mockito.ArgumentMatchers.*",
+        "org.mockito.Answers.*"
+    ],
+    "workbench.activityBar.location": "top",
+    "tailwind-fold.autoFold": false,
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "codesnap.backgroundColor": "#fff",
+    "codesnap.showLineNumbers": false,
+    "codesnap.showWindowControls": false,
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": true,
+        "repositories": true,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "editor.gotoLocation.multipleReferences": "gotoAndPeek",
+    "terminal.integrated.cursorStyleInactive": "line",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "chat.tools.terminal.autoApprove": {
+        "/^\\./mvnw quarkus:dev$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^mvn quarkus:dev$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^mvn clean$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^mvn quarkus:dev -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^pkill -f \"quarkus\\.\\*dev\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^mvn clean quarkus:dev$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./setup-dev.sh": true,
+        "mv": true,
+        "npx": true,
+        "npm run test:all": true,
+        "true": true
+    },
+    "window.newWindowProfile": "Default",
+    "redhat.telemetry.enabled": true,
+
+    "cucumber.glue": [
+        "**/*.cy.ts",
+        "*specs*/**/*.cs",
+        "features/**/*.js",
+        "features/**/*.jsx",
+        "features/**/*.php",
+        "features/**/*.py",
+        "features/**/*.rs",
+        "features/**/*.rb",
+        "features/**/*.ts",
+        "features/**/*.tsx",
+        "features/**/*_test.go",
+        "src/test/**/*.java",
+        "tests/**/*.py",
+        "tests/**/*.rs"
+    ],
+    "cucumber.features": [
+        "**/*.feature",
+        "src/test/**/*.feature",
+        "features/**/*.feature",
+        "tests/**/*.feature",
+        "*specs*/**/*.feature"
+    ],
+    "typescript.experimental.useTsgo": false,
+    "java.diagnostic.filter": [
+        "**/target/generated-sources/**" // Example pattern to exclude generated source files
+    ],
+    "excalidraw.theme": "auto",
+    "sonarlint.automaticAnalysis": false,
+    "chat.viewSessions.orientation": "stacked",
+    "chat.tools.urls.autoApprove": {
+        "https://nx.dev": {
+            "approveRequest": false,
+            "approveResponse": true
+        }
+    },
+    "chat.editing.confirmEditRequestRemoval": false,
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.ignoreWhitespace": true,
+    "intellijRecentFiles.navigate": true
+}
