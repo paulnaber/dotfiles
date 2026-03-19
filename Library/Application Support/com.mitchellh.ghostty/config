@@ -1,0 +1,14 @@
+# reload with cmd + shift + ,
+# ghostty +list-themes
+theme = light:"Monokai Pro Light",dark:"Monokai Pro Spectrum"
+shell-integration-features = sudo
+macos-icon=xray
+# macos-icon=chalkboard
+# macos-icon=glass
+# macos-icon=paper
+# macos-icon=retro
+# macos-icon=blueprint
+# macos-icon=microchip
+window-width = 220
+window-height = 55
+auto-update-channel = tip
