@@ -1,0 +1,142 @@
+{
+    "rules": [
+        {
+            "id": "zrw8es4",
+            "is_enabled": true,
+            "name": "[DEV] swagger-ui (m2mgate.com)",
+            "detection": "CONTAINS",
+            "url_fragment": "m2mgate.com",
+            "tab": {
+                "title": "[dev] $1 {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": "",
+                "url_matcher": "^https?:\\/\\/([^\\.]+)\\.m2mgate\\.com",
+                "group_id": null
+            }
+        },
+        {
+            "id": "a8kt75g",
+            "is_enabled": true,
+            "name": "[DEV] swagger-ui (m2mgate.dev)",
+            "detection": "CONTAINS",
+            "url_fragment": "m2mgate.dev",
+            "tab": {
+                "title": "[dev] $1 {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": "",
+                "url_matcher": "^https?:\\/\\/([^\\.]+)\\.m2mgate\\.dev",
+                "group_id": null
+            }
+        },
+        {
+            "id": "65jzs06",
+            "is_enabled": true,
+            "name": "mel",
+            "detection": "CONTAINS",
+            "url_fragment": "melitta-group.com",
+            "tab": {
+                "title": "[mel] {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": null,
+                "url_matcher": null,
+                "group_id": null
+            }
+        },
+        {
+            "id": "f9pn2z9",
+            "is_enabled": true,
+            "name": "int",
+            "detection": "CONTAINS",
+            "url_fragment": ".int.",
+            "tab": {
+                "title": "[int] {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": null,
+                "url_matcher": null,
+                "group_id": null
+            }
+        },
+        {
+            "id": "tuipdjq",
+            "is_enabled": true,
+            "name": "prod",
+            "detection": "CONTAINS",
+            "url_fragment": "melitta-insights.com",
+            "tab": {
+                "title": "[prod] {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": null,
+                "url_matcher": null,
+                "group_id": null
+            }
+        },
+        {
+            "id": "4usyzet",
+            "is_enabled": true,
+            "name": "dev",
+            "detection": "CONTAINS",
+            "url_fragment": "m2mgate.com",
+            "tab": {
+                "title": "[dev] {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": null,
+                "url_matcher": null,
+                "group_id": null
+            }
+        },
+        {
+            "id": "jwrpci3",
+            "is_enabled": true,
+            "name": "localhost",
+            "detection": "CONTAINS",
+            "url_fragment": "localhost",
+            "tab": {
+                "title": "[local] {title}",
+                "icon": null,
+                "pinned": false,
+                "protected": false,
+                "unique": false,
+                "muted": false,
+                "title_matcher": null,
+                "url_matcher": null,
+                "group_id": null
+            }
+        }
+    ],
+    "groups": [],
+    "settings": {
+        "theme": "dim",
+        "lightweight_mode_enabled": false,
+        "lightweight_mode_patterns": [],
+        "lightweight_mode_apply_to_rules": true,
+        "lightweight_mode_apply_to_tab_hive": true,
+        "auto_close_enabled": false,
+        "auto_close_timeout": 30,
+        "tab_hive_reject_list": [],
+        "debug_mode": false
+    }
+}
