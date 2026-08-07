@@ -5,11 +5,11 @@ plugins=(git zsh-autosuggestions z)
 source $ZSH/oh-my-zsh.sh
 
 # set java home
-export JAVA_HOME=/Users/paulnaber/Documents/Java/jdk-17.0.12.jdk/Contents/Home
+export JAVA_HOME=${JAVA_HOME:-/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home}
 alias java21="export JAVA_HOME=/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home"
 alias java17="export JAVA_HOME=/Users/paulnaber/Documents/Java/jdk-17.0.12.jdk/Contents/Home"
 alias java11="export JAVA_HOME=/Users/paulnaber/Documents/Java/zulu-11.jdk/Contents/Home"
-java17 # default to java 17
+
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
 
@@ -31,6 +31,10 @@ function ws() {
     open -a "Webstorm" "$1"
 }
 
+# map code to cursor
+alias code="cursor"
+alias c="cursor"
+
 # nvim
 alias vim="nvim"
 alias vi="nvim"
@@ -48,6 +52,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # dotfiles
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# spotlight
+alias fix-spotlight="find . -path '*node_modules/*' -prune -o -type d -name 'node_modules' -exec touch '{}/.metadata_never_index' \;"
+alias fix-spotlight-globally="find ~ -type d -path './.*' -prune -o -path './Pictures*' -prune -o -path './Library*' -prune -o -path '*node_modules/*' -prune -o -type d -name 'node_modules' -exec touch '{}/.metadata_never_index' \; -print"
+
+
 # paths
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/Scripts
@@ -57,4 +66,11 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Cursor.app/Contents/Resources/app/bin"
 export PATH="$PATH:/Applications/WebStorm.app/Contents/MacOS"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/paulnaber/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/paulnaber/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/paulnaber/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/paulnaber/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

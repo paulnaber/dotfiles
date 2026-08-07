@@ -54,7 +54,7 @@
     "workbench.settings.editor": "json", // opens in json by default
     "workbench.colorTheme": "Monokai Pro Light",
     "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
-    "workbench.preferredHighContrastLightColorTheme": "Default Light+",
+    "workbench.preferredHighContrastLightColorTheme": "Light+",
     "workbench.preferredLightColorTheme": "Monokai Pro Light",
     "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)",
     "workbench.iconTheme": "material-icon-theme",

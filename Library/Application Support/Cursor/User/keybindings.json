@@ -162,5 +162,15 @@
         "key": "shift+cmd+e",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+l",
+        "command": "-editor.action.inlineDiffs.nextDiffFile",
+        "when": "editorTextFocus && inlineDiffs.hasInlineDiffsInAnyEditor"
+    },
+    {
+        "key": "alt+cmd+s",
+        "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+        "when": "!isAuxiliaryWindowFocusedContext"
     }
 ]

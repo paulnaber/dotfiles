@@ -10,13 +10,11 @@ Setup auf einem neuen Rechner
 
 Tägliche Nutzung
 
-• Status prüfen: `dot status`
-• Datei hinzufügen: `dot add .zshrc`
-• Speichern: `dot commit -m "Update"`
+• Status prüfen: `dot status`  
+• Datei hinzufügen: `dot add .zshrc`  
+• Speichern: `dot commit -m "Update"`  
 • Hochladen: `dot push`
 
 Secrets
 
 • Private Keys oder Tokens niemals adden!
-• Nutze `~/.zsh_local` für lokale Secrets (ist in .gitignore).
-
