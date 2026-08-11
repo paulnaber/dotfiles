@@ -58,7 +58,7 @@
     "workbench.preferredLightColorTheme": "Monokai Pro Light",
     "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.tree.indent": 15,
+    "workbench.tree.indent": 5, // 15
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editorAssociations": {
         "*.copilotmd": "vscode.markdown.preview.editor",
@@ -67,12 +67,12 @@
     "workbench.editor.pinnedTabsOnSeparateRow": false,
     "workbench.list.smoothScrolling": true,
     "workbench.startupEditor": "none",
-    // "workbench.colorCustomizations": {
-    //     "diffEditor.insertedLineBackground": "#a6ff0017",
-    //     "diffEditor.removedLineBackground": "#ff000018",
-    //     "diffEditor.insertedTextBackground": "#a6ff006c",
-    //     "diffEditor.removedTextBackground": "#ff000065"
-    // },
+    "workbench.colorCustomizations": {
+        "diffEditor.insertedLineBackground": "#a6ff0017",
+        "diffEditor.removedLineBackground": "#ff000018",
+        "diffEditor.insertedTextBackground": "#a6ff006c",
+        "diffEditor.removedTextBackground": "#ff000065"
+    },
     // explorer settings
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
@@ -80,12 +80,14 @@
 
     // terminal settings
     // "terminal.integrated.fontSize": 12,
-    "terminal.external.osxExec": "iTerm",
-    "terminal.integrated.env.osx": {},
+    // "terminal.external.osxExec": "iTerm",
+    "terminal.integrated.env.osx": {
+        "JAVA_HOME": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home"
+    },
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.inheritEnv": true,
 
     // prettier settings
     "prettier.trailingComma": "none",
@@ -112,7 +114,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -167,8 +169,9 @@
     "java.inlayHints.parameterNames.enabled": "none",
 
     // java settings
-    "java.home": "/Users/paulnaber/Documents/Java/jjdk-21.0.6.jdk/Contents/Home",
-    "xml.java.home": "/Users/paulnaber/Documents/Java/zulu-11.jdk/Contents/Home",
+    "jdk.jdkhome": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home",
+    // "java.home": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home",
+    "xml.java.home": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home",
     "java.jdt.ls.java.home": "/Users/paulnaber/Documents/Java/jdk-21.0.6.jdk/Contents/Home",
     "java.configuration.runtimes": [
         {
@@ -202,9 +205,13 @@
     // "java.test.config": {
     //     "vmArgs": ["-Dquarkus.test.type=integration"]
     // },
-    "java.test.config": {
-        "vmArgs": ["-Dquarkus.test.type=quarkus-test"]
-    },
+    // "java.test.config": {
+    //     "vmArgs": [
+    //         "-Djava.util.logging.manager=org.jboss.logmanager.LogManager",
+    //         "-Dquarkus.test.type=quarkus-test",
+    //         "-Duser.timezone=UTC"
+    //     ]
+    // },
     // git settings
     "git.confirmSync": false,
     "files.exclude": {
@@ -472,8 +479,9 @@
         "org.mockito.ArgumentMatchers.*",
         "org.mockito.Answers.*"
     ],
-    "workbench.activityBar.location": "top",
     "tailwind-fold.autoFold": false,
+    "tailwind-fold.unfoldIfLineSelected": false,
+    "tailwind-fold.showTailwindImage": false,
     "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -547,7 +555,8 @@
     "redhat.telemetry.enabled": true,
 
     "cucumber.glue": [
-        "**/*.cy.ts",
+        "apps/**/*.cy.ts",
+        "e2e/**/*.cy.ts",
         "*specs*/**/*.cs",
         "features/**/*.js",
         "features/**/*.jsx",
@@ -563,13 +572,14 @@
         "tests/**/*.rs"
     ],
     "cucumber.features": [
-        "**/*.feature",
+        "apps/**/*.feature",
+        "e2e/**/*.feature",
         "src/test/**/*.feature",
         "features/**/*.feature",
         "tests/**/*.feature",
         "*specs*/**/*.feature"
     ],
-    "typescript.experimental.useTsgo": false,
+    "typescript.experimental.useTsgo": true,
     "java.diagnostic.filter": [
         "**/target/generated-sources/**" // Example pattern to exclude generated source files
     ],
@@ -585,5 +595,22 @@
     "chat.editing.confirmEditRequestRemoval": false,
     "git.blame.editorDecoration.enabled": true,
     "git.blame.ignoreWhitespace": true,
-    "intellijRecentFiles.navigate": true
+    "intellijRecentFiles.navigate": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cursor.cpp.disabledLanguages": ["plaintext"],
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "[cucumber]": {
+        "editor.defaultFormatter": "CucumberOpen.cucumber-official"
+    },
+    "workbench.agentsWindowButton.enabled": false,
+    "mermaid.vscode.aiExportName": false,
+    "mermaidChart.showGenerateDiagramCodeLens": false,
+    "diffEditor.experimental.showMoves": true,
+    "jdk.telemetry.enabled": false,
+    "git.replaceTagsWhenPull": true,
+    "js/ts.tsserver.maxMemory": 5000,
+    "workbench.activityBar.location": "top",
+    "chat.titleBar.openInAgentsWindow.enabled": false
 }

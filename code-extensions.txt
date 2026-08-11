@@ -42,3 +42,6 @@ vscjava.vscode-maven
 vscodevim.vim
 vue.volar
 yoavbls.pretty-ts-errors
+
+for ext in "42crunch.vscode-openapi" "adpyke.codesnap" "alexkrechik.cucumberautocomplete" "angular.ng-template" "anysphere.remote-containers" "anysphere.remote-ssh" "bradlc.vscode-tailwindcss" "cucumberopen.cucumber-official" "dandidevs.multi-file-renamer" "dbaeumer.vscode-eslint" "esbenp.prettier-vscode" "gitlab.gitlab-workflow" "golang.go" "gruntfuggly.todo-tree" "hollowtree.vue-snippets" "johnpapa.angular2" "johnpapa.vscode-peacock" "koihik.vscode-lua-format" "lllllllqw.jsdoc" "mads-hartmann.bash-ide-vscode" "mermaidchart.vscode-mermaid-chart" "mkxml.vscode-filesize" "monokai.theme-monokai-pro-vscode" "ms-ceintl.vscode-language-pack-de" "natewallace.angular2-inline" "naumovs.color-highlight" "nrwl.angular-console" "oracle.oracle-java" "paul naber.snipcrawler-extension" "pkief.material-icon-theme" "pomdtr.excalidraw-editor" "redhat.vscode-xml" "redhat.vscode-yaml" "stivo.tailwind-fold" "typescriptteam.native-preview" "uctakeoff.vscode-counter" "vscjava.vscode-gradle" "vscjava.vscode-java-debug" "vscjava.vscode-java-dependency" "vscjava.vscode-java-pack" "vscjava.vscode-maven" "vscodevim.vim" "vue.volar" "yoavbls.pretty-ts-errors"; do code --install-extension "$ext"; done
+
